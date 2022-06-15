@@ -13,15 +13,15 @@ export function Router() {
           <Route exact path="/">
             <Login />
           </Route>
-            <CarrinhProvider>
-              <Route path="/feira">
-                <Feira />
-              </Route>
-            </CarrinhProvider>
+          <CarrinhProvider>
+            <Route path="/feira">
+              <Feira />
+            </Route>
+            <Route path="/carrinho">
+              <Carrinho />
+            </Route>
+          </CarrinhProvider>
         </UsuarioProvider>
-        <Route path="/carrinho">
-          <Carrinho />
-        </Route>
       </Switch>
     </BrowserRouter>
   );
